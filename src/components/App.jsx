@@ -1,7 +1,13 @@
+import ClickCounter from "./ClickCounter";
+import HoverCounter from "./HoverCounter";
+
 function App() {
   return (
     <>
-      <div className="app">Hello world</div>
+      <div className="app">
+        <HoverCounter></HoverCounter>
+        <ClickCounter></ClickCounter>
+      </div>
     </>
   );
 }

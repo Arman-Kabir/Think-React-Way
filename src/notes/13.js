@@ -1,4 +1,4 @@
 /**
- * Higher Order Component (HOC):
+ * Higher Order Components (HOC):
  * 
  */
