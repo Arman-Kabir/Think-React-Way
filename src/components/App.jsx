@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <div className="app">
-        <HoverCounter></HoverCounter>
         <ClickCounter></ClickCounter>
+        <HoverCounter></HoverCounter>
       </div>
     </>
   );
