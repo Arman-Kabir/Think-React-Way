@@ -13,5 +13,7 @@
  */
 
 /**#14
- * 
+ * render props : avoids props drilling
+ * PROP that defines Render Logic
+ * render prop is a function 
  */
