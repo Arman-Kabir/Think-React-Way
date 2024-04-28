@@ -34,12 +34,10 @@
  2.Wrap parent with Context Provider
  3.Provide a value of the context as prop
  4.Wrap child with Context COnsumer
- 5.Consumer follows the render prop pattern.
- 6. 
+ 5.Consumer follows the render prop pattern. 
 */
 
 /*#16-How to use React Context API 
-
 
 
 

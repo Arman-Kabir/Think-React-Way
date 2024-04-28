@@ -1,8 +1,8 @@
 import React from "react";
 import ClickCounter from "./ClickCounter";
-
 import Counter from "./Counter";
 import Section from "./Section";
+import ThemeContext from "./contexts/themeContext";
 
 export default class App extends React.Component {
   state = {
@@ -23,7 +23,9 @@ export default class App extends React.Component {
             )}
           </Counter>
 
-          <Section theme={theme}></Section>
+          <ThemeContext.Provider value={{ theme: theme }}>
+            <Section></Section>
+          </ThemeContext.Provider>
         </div>
       </>
     );
