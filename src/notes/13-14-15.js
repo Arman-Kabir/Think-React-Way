@@ -17,3 +17,26 @@
  * PROP that defines Render Logic of a component
  * render prop is a function 
  */
+
+/*#15
+ We can pass props from parent to child.
+ One way data flow.
+
+ Deeply nested children - Target child component is far away from parent. --> props drilling.
+
+ *We can avoid props drilling problems in 3 ways.
+ 1.HOC / Higher Order components
+ 2.Render Props pattern
+ 3. Context api 
+
+ steps for Context API : 
+ 1.Create a context
+ 2.Wrap parent with Context Provider
+ 3.Provide a value of the context as prop
+ 4.Wrap child with Context COnsumer
+ 5.Consumer follows the render prop pattern.
+ 6. 
+
+
+
+*/
