@@ -7,24 +7,27 @@ function App() {
   return (
     <>
       <div className="app">
-      
-        <Counter
-          render={(count, incrementCount) => (
+        {/* <ClickCounter></ClickCounter>
+        <HoverCounter></HoverCounter> */}
+        {/* <User render={(isLoggedIn) => (isLoggedIn ? "Sumit" : "Guest")}></User> */}
+
+        <Counter>
+          {(count, incrementCount) => (
             <ClickCounter
               count={count}
               incrementCount={incrementCount}
             ></ClickCounter>
           )}
-        ></Counter>
+        </Counter>
 
-        <Counter
-          render={(count, incrementCount) => (
+        <Counter>
+          {(count, incrementCount) => (
             <HoverCounter
               count={count}
               incrementCount={incrementCount}
             ></HoverCounter>
           )}
-        ></Counter>
+        </Counter>
       </div>
     </>
   );

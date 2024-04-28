@@ -14,6 +14,6 @@
 
 /**#14
  * render props : avoids props drilling
- * PROP that defines Render Logic
+ * PROP that defines Render Logic of a component
  * render prop is a function 
  */
