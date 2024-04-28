@@ -1,26 +1,31 @@
+import React from "react";
 import ClickCounter from "./ClickCounter";
 
 import Counter from "./Counter";
 import Section from "./Section";
 
-function App() {
-  return (
-    <>
-      <div className="app">
-        <Counter>
-          {(count, incrementCount) => (
-            <ClickCounter
-              count={count}
-              incrementCount={incrementCount}
-            ></ClickCounter>
-          )}
-        </Counter>
+export default class App extends React.Component {
+  state = {
+    theme: "dark",
+  };
+  render() {
+    const { theme } = this.state;
 
-        <Section></Section>
+    return (
+      <>
+        <div className="app">
+          <Counter>
+            {(counter, incrementCount) => (
+              <ClickCounter
+                count={counter}
+                incrementCount={incrementCount}
+              ></ClickCounter>
+            )}
+          </Counter>
 
-      </div>
-    </>
-  );
+          <Section theme={theme}></Section>
+        </div>
+      </>
+    );
+  }
 }
-
-export default App;

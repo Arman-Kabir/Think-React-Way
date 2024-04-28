@@ -1,16 +1,17 @@
 import Counter from "./Counter";
 import HoverCounter from "./HoverCounter";
 
-export default function Content() {
+export default function Content({theme}) {
   return (
     <div>
       <h1>This is a Content</h1>
 
       <Counter>
-        {(count, incrementCount) => (
+        {(counter, incrementCount) => (
           <HoverCounter
-            count={count}
+            count={counter}
             incrementCount={incrementCount}
+            theme={theme}
           ></HoverCounter>
         )}
       </Counter>
