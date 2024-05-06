@@ -6,7 +6,7 @@ class Context {
   //   provider
   Provider = ({ children, value }) => {
     this.value = value;
-    return children;
+    return value;
   };
 
   //   consumer
